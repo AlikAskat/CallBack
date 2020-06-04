@@ -37,5 +37,6 @@ class CallBackTest {
     }
 
     private SelenideElement $(String s) {
+        return null;
     }
 }
