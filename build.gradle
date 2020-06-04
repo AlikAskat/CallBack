@@ -25,6 +25,4 @@ test {
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
 
-test {
-    useJUnitPlatform()
-}
+
