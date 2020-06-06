@@ -9,13 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CallBackTest {
 
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
 
     @Test
      public void shouldSubmitRequest() {
@@ -28,15 +21,4 @@ class CallBackTest {
         $(".alert-success").shouldHave(exactText("Ваша заявка успешно отправлена!"));
     }
 
-    private void open(String s) {
-
-    }
-
-    private Condition[] exactText(String s) {
-        return new Condition[0];
-    }
-
-    private SelenideElement $(String s) {
-        return null;
-    }
 }
