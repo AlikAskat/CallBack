@@ -14,11 +14,11 @@ class CallBackTest {
      public void shouldSubmitRequest() {
         open("http://localhost:9999");
         SelenideElement form = $("#root");
-        form.$("data-test-id='name'").setValue("Василий");
-        form.$("data-test-id='phone'").setValue("+79270000000");
-        form.$("data-test-id='agreement'").click();
+        form.$("[data-test-id='name']").setValue("Василий");
+        form.$("[data-test-id='phone']").setValue("+79270000000");
+        form.$("[data-test-id='agreement']").click();
         form.$("button button_view_extra button_size_m button_theme_alfa-on-white").click();
-        $("order-success").shouldHave(exactText("Ваша заявка успешно отправлена!"));
+        $("[data-test-id='order-succes']").shouldHave(exactText("Ваша заявка успешно отправлена!"));
     }
 
 }
